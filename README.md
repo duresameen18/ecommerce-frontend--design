@@ -1,13 +1,13 @@
 # E-Commerce Frontend Design - Internship Task
 
-## 📌 Project Overview
+##  Project Overview
 This is a complete e-commerce website frontend built as part of the DevelopersHub Frontend Development Internship. The project demonstrates proficiency in HTML5, CSS3, and JavaScript with a focus on responsive design and user experience.
 
 **Deadline:** February 16, 2026
 
 ---
 
-## 🚀 Quick Start
+##  Quick Start
 
 ### 1. Download All Files
 Download all the files provided and organize them in the following structure:
@@ -41,9 +41,9 @@ Simply open `index.html` in your web browser to see the home page.
 
 ---
 
-## 📋 Features Implemented
+##  Features Implemented
 
-### Week 1: Header & Footer ✅
+### Week 1: Header & Footer 
 - ✅ Responsive navigation bar with logo
 - ✅ Search bar with category dropdown
 - ✅ User action icons (Profile, Messages, Orders, Cart)
@@ -51,7 +51,7 @@ Simply open `index.html` in your web browser to see the home page.
 - ✅ Complete footer with social links
 - ✅ App download buttons
 
-### Week 2: Home & Product Pages ✅
+### Week 2: Home & Product Pages 
 - ✅ Hero section with call-to-action
 - ✅ Featured categories grid
 - ✅ Deals section with countdown timer
@@ -60,7 +60,7 @@ Simply open `index.html` in your web browser to see the home page.
 - ✅ Pagination
 - ✅ Responsive grid layouts
 
-### Week 3: Product Details & Interactivity ✅
+### Week 3: Product Details & Interactivity 
 - ✅ Product image gallery with thumbnails
 - ✅ Image switching on thumbnail click
 - ✅ Color selection with visual feedback
@@ -76,7 +76,7 @@ Simply open `index.html` in your web browser to see the home page.
 
 ---
 
-## 🛠 Technologies Used
+## Technologies Used
 
 - **HTML5:** Semantic markup for better SEO and accessibility
 - **CSS3:** 
@@ -113,7 +113,7 @@ Simply open `index.html` in your web browser to see the home page.
 
 ---
 
-## 📱 Responsive Breakpoints
+##  Responsive Breakpoints
 
 - **Desktop:** 1200px and above
 - **Laptop:** 992px - 1199px
@@ -122,7 +122,7 @@ Simply open `index.html` in your web browser to see the home page.
 
 ---
 
-## 🎯 Key JavaScript Functions
+##  Key JavaScript Functions
 
 ### Search Functionality
 ```javascript
@@ -146,7 +146,7 @@ showToast(message, type) - Notification system
 
 ---
 
-## ✅ Evaluation Criteria Met
+##  Evaluation Criteria Met
 
 ### 1. Design Accuracy ✅
 - Closely follows modern e-commerce design patterns
@@ -178,7 +178,7 @@ showToast(message, type) - Notification system
 
 ---
 
-## 📦 Submission Checklist
+##  Submission Checklist
 
 - [x] Header with search bar ✅
 - [x] Footer with links ✅
@@ -194,7 +194,7 @@ showToast(message, type) - Notification system
 
 ---
 
-## 🚀 Git Commands for Submission
+##  Git Commands for Submission
 
 ```bash
 # Initialize repository
@@ -215,7 +215,7 @@ git push -u origin main
 
 ---
 
-## 📂 File Descriptions
+##  File Descriptions
 
 ### HTML Files
 - **index.html** - Home page with hero, categories, deals, and featured products
@@ -235,7 +235,7 @@ git push -u origin main
 
 ---
 
-## 🎓 Learning Outcomes
+##  Learning Outcomes
 
 Through this project, I have demonstrated:
 - Professional frontend development skills
@@ -248,7 +248,7 @@ Through this project, I have demonstrated:
 
 ---
 
-## 🔧 Future Enhancements (Optional)
+##  Future Enhancements (Optional)
 
 - Shopping cart page
 - User authentication
@@ -261,7 +261,7 @@ Through this project, I have demonstrated:
 
 ---
 
-## 👤 Developer
+##  Developer
 
 **Name:** [Your Name]
 **Internship:** DevelopersHub Frontend Development
@@ -269,7 +269,7 @@ Through this project, I have demonstrated:
 
 ---
 
-## 📝 Notes
+##  Notes
 
 - All images are from Unsplash (free stock images)
 - Icons from Font Awesome
@@ -278,7 +278,7 @@ Through this project, I have demonstrated:
 
 ---
 
-## 🙏 Acknowledgments
+##  Acknowledgments
 
 Special thanks to DevelopersHub for this learning opportunity!
 
