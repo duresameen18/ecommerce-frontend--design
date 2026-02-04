@@ -148,25 +148,25 @@ showToast(message, type) - Notification system
 
 ##  Evaluation Criteria Met
 
-### 1. Design Accuracy ✅
+### 1. Design Accuracy
 - Closely follows modern e-commerce design patterns
 - Consistent spacing and typography
 - Professional color scheme
 
-### 2. Code Quality ✅
+### 2. Code Quality 
 - Semantic HTML5 tags (header, nav, section, footer, article)
 - Clean, organized CSS with comments
 - CSS variables for reusability
 - Modular JavaScript functions
 - Descriptive variable and function names
 
-### 3. Responsiveness ✅
+### 3. Responsiveness 
 - Works on desktop screens (1920px to 1200px)
 - Adapts to smaller desktop sizes
 - Media queries for different screen sizes
 - Flexible grid layouts
 
-### 4. Interactivity ✅
+### 4. Interactivity 
 - Working search bar
 - Product image gallery
 - Size dropdown selector
@@ -263,9 +263,9 @@ Through this project, I have demonstrated:
 
 ##  Developer
 
-**Name:** [Your Name]
-**Internship:** DevelopersHub Frontend Development
-**Date:** February 2026
+**Name:** [Dur E Sameen]
+**Internship:** DevelopersHub corporation " Frontend Development "
+**Date:** 16 February 2026
 
 ---
 
@@ -282,6 +282,6 @@ Through this project, I have demonstrated:
 
 Special thanks to DevelopersHub for this learning opportunity!
 
----
 
-**Last Updated:** February 2026
+
+
