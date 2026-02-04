@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-Commerce Store - Home</title>
+    
+    <!-- CSS Files -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/home.css">
+    
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    
+    <!-- HEADER (Same as Week 1) -->
+    <header class="main-header">
+        <div class="top-bar">
+            <div class="container">
+                <div class="logo-search-wrapper">
+                    <a href="index.html" class="logo">
+                        <i class="fas fa-shopping-bag"></i>
+                        <span>Brand</span>
+                    </a>
+                    <div class="search-bar">
+                        <input type="text" id="searchInput" placeholder="Search" class="search-input">
+                        <select class="category-dropdown">
+                            <option>All category</option>
+                            <option>Electronics</option>
+                            <option>Fashion</option>
+                            <option>Home & Garden</option>
+                        </select>
+                        <button class="search-btn" onclick="handleSearch()">Search</button>
+                    </div>
+                </div>
+                <div class="user-actions">
+                    <a href="index.html" class="action-item">
+                        <i class="far fa-user"></i>
+                        <span>Profile</span>
+                    </a>
+                    <a href="index.html" class="action-item">
+                        <i class="far fa-comment"></i>
+                        <span>Message</span>
+                    </a>
+                    <a href="index.html" class="action-item">
+                        <i class="far fa-heart"></i>
+                        <span>Orders</span>
+                    </a>
+                    <a href="index.html" class="action-item cart">
+                        <i class="fas fa-shopping-cart"></i>
+                        <span>My cart</span>
+                        <span class="cart-badge">0</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <nav class="bottom-nav">
+            <div class="container">
+                <div class="nav-left">
+                    <button class="category-menu-btn">
+                        <i class="fas fa-bars"></i>
+                        All category
+                    </button>
+                    <a href="index.html" class="nav-link active">Home</a>
+                    <a href="index.html" class="nav-link"><a href="products.html">Hot offers</a></a>
+                    <a href="index.html" class="nav-link"><a href="products.html">Gift boxes</a></a>
+                    <a href="products.html" class="nav-link">Products</a>
+                    <a href="index.html" class="nav-link"><a href="products.html">Menu item</a></a>
+                    <a href="index.html" class="nav-link">Help <i class="fas fa-chevron-down"></i></a>
+                </div>
+                <div class="nav-right">
+                    <select class="lang-currency">
+                        <option>English, USD</option>
+                        <option>Spanish, EUR</option>
+                    </select>
+                    <select class="ship-to">
+                        <option>Ship to 🇺🇸</option>
+                        <option>Ship to 🇬🇧</option>
+                    </select>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- ============================================ -->
+    <!-- WEEK 2: HOME PAGE CONTENT -->
+    <!-- ============================================ -->
+    
+    <!-- Hero Section -->
+    <section class="hero-section">
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-text">
+                    <h1 class="hero-title">Latest trending</h1>
+                    <h2 class="hero-subtitle">Electronic items</h2>
+                    <p class="hero-description">Discover the newest electronics with amazing deals up to 50% off!</p>
+                    <button class="btn btn-primary hero-btn">Learn more</button>
+                </div>
+                <div class="hero-image">
+                    <img src="https://images.unsplash.com/photo-1505740420928-5e560c06d30e?w=600" alt="Latest Products">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Categories -->
+    <section class="categories-section">
+        <div class="container">
+            <h2 class="section-title">Shop by Category</h2>
+            <div class="categories-grid">
+                <div class="category-card">
+                    <div class="category-icon">
+                        <i class="fas fa-laptop"></i>
+                    </div>
+                    <h3>Electronics</h3>
+                    <p>1,245 items</p>
+                </div>
+                <div class="category-card">
+                    <div class="category-icon">
+                        <i class="fas fa-tshirt"></i>
+                    </div>
+                    <h3>Fashion</h3>
+                    <p>3,567 items</p>
+                </div>
+                <div class="category-card">
+                    <div class="category-icon">
+                        <i class="fas fa-home"></i>
+                    </div>
+                    <h3>Home & Garden</h3>
+                    <p>892 items</p>
+                </div>
+                <div class="category-card">
+                    <div class="category-icon">
+                        <i class="fas fa-futbol"></i>
+                    </div>
+                    <h3>Sports</h3>
+                    <p>1,678 items</p>
+                </div>
+                <div class="category-card">
+                    <div class="category-icon">
+                        <i class="fas fa-spa"></i>
+                    </div>
+                    <h3>Beauty</h3>
+                    <p>2,341 items</p>
+                </div>
+                <div class="category-card">
+                    <div class="category-icon">
+                        <i class="fas fa-gamepad"></i>
+                    </div>
+                    <h3>Gaming</h3>
+                    <p>567 items</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Deals Section -->
+    <section class="deals-section">
+        <div class="container">
+            <div class="deals-banner">
+                <div class="deals-content">
+                    <span class="deals-badge">Save up to 50%</span>
+                    <h2>Super Deals of the Week</h2>
+                    <p>Limited time offer - don't miss out!</p>
+                    <div class="countdown">
+                        <div class="countdown-item">
+                            <span class="countdown-number">05</span>
+                            <span class="countdown-label">Days</span>
+                        </div>
+                        <div class="countdown-item">
+                            <span class="countdown-number">14</span>
+                            <span class="countdown-label">Hours</span>
+                        </div>
+                        <div class="countdown-item">
+                            <span class="countdown-number">32</span>
+                            <span class="countdown-label">Minutes</span>
+                        </div>
+                        <div class="countdown-item">
+                            <span class="countdown-number">45</span>
+                            <span class="countdown-label">Seconds</span>
+                        </div>
+                    </div>
+                    <button class="btn btn-primary">Shop Now</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Products -->
+    <section class="products-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Featured Products</h2>
+                <a href="products.html" class="view-all">View All <i class="fas fa-arrow-right"></i></a>
+            </div>
+            
+            <div class="products-grid">
+                <!-- Product Card 1 -->
+                <div class="product-card" onclick="window.location.href='product-detail.html'">
+                    <div class="product-badge">-20%</div>
+                    <div class="product-wishlist">
+                        <i class="far fa-heart"></i>
+                    </div>
+                    <div class="product-image">
+                        <img src="https://images.unsplash.com/photo-1505740420928-5e560c06d30e?w=300" alt="Product">
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-title">Wireless Headphones</h3>
+                        <div class="product-rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="far fa-star"></i>
+                            <span>(4.0)</span>
+                        </div>
+                        <div class="product-price">
+                            <span class="price-current">$79.99</span>
+                            <span class="price-old">$99.99</span>
+                        </div>
+                        <button class="btn btn-primary btn-buy">Buy Now</a></button>
+                    </div>
+                </div>
+
+                <!-- Product Card 2 -->
+                <div class="product-card" onclick="window.location.href='product-detail.html'">
+                    <div class="product-badge hot">HOT</div>
+                    <div class="product-wishlist">
+                        <i class="far fa-heart"></i>
+                    </div>
+                    <div class="product-image">
+                        <img src="https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=300" alt="Product">
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-title">Smart Watch Pro</h3>
+                        <div class="product-rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <span>(5.0)</span>
+                        </div>
+                        <div class="product-price">
+                            <span class="price-current">$299.99</span>
+                        </div>
+                        <button class="btn btn-primary btn-buy">Buy Now</a></button>
+                    </div>
+                </div>
+
+                <!-- Product Card 3 -->
+                <div class="product-card" onclick="window.location.href='product-detail.html'">
+                    <div class="product-badge">-15%</div>
+                    <div class="product-wishlist">
+                        <i class="far fa-heart"></i>
+                    </div>
+                    <div class="product-image">
+                        <img src="https://images.unsplash.com/photo-1572635196237-14b3f281503f?w=300" alt="Product">
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-title">Designer Sunglasses</h3>
+                        <div class="product-rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="far fa-star"></i>
+                            <span>(4.2)</span>
+                        </div>
+                        <div class="product-price">
+                            <span class="price-current">$127.50</span>
+                            <span class="price-old">$150.00</span>
+                        </div>
+                        <button class="btn btn-primary btn-buy">Buy Now</a></button>
+                    </div>
+                </div>
+
+                <!-- Product Card 4 -->
+                <div class="product-card" onclick="window.location.href='product-detail.html'">
+                    <div class="product-wishlist">
+                        <i class="far fa-heart"></i>
+                    </div>
+                    <div class="product-image">
+                        <img src="https://images.unsplash.com/photo-1491553895911-0055eca6402d?w=300" alt="Product">
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-title">Classic Sneakers</h3>
+                        <div class="product-rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                            <span>(4.5)</span>
+                        </div>
+                        <div class="product-price">
+                            <span class="price-current">$89.99</span>
+                        </div>
+                        <button class="btn btn-primary btn-buy">Buy Now</a></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER (Same as Week 1) -->
+    <footer class="main-footer">
+        <div class="container">
+            <div class="footer-top">
+                <div class="footer-column">
+                    <div class="footer-logo">
+                        <i class="fas fa-shopping-bag"></i>
+                        <span>Brand</span>
+                    </div>
+                    <p class="footer-description">
+                        Best information about the company goes here but now lorem ipsum is being used.
+                    </p>
+                    <div class="social-links">
+                        <a href="index.html" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+                        <a href="index.html" class="social-icon"><i class="fab fa-twitter"></i></a>
+                        <a href="index.html" class="social-icon"><i class="fab fa-instagram"></i></a>
+                        <a href="index.html" class="social-icon"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                <div class="footer-column">
+                    <h4>About</h4>
+                    <ul class="footer-links">
+                        <li><a href="index.html">About Us</a></li>
+                        <li><a href="index.html">Find Store</a></li>
+                        <li><a href="index.html">Categories</a></li>
+                        <li><a href="index.html">Blogs</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h4>Partnership</h4>
+                    <ul class="footer-links">
+                        <li><a href="index.html">About Us</a></li>
+                        <li><a href="index.html">Find Store</a></li>
+                        <li><a href="index.html">Categories</a></li>
+                        <li><a href="index.html">Blogs</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h4>Information</h4>
+                    <ul class="footer-links">
+                        <li><a href="index.html">Help Center</a></li>
+                        <li><a href="index.html">Money Refund</a></li>
+                        <li><a href="index.html">Shipping</a></li>
+                        <li><a href="index.html">Contact Us</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h4>For Users</h4>
+                    <ul class="footer-links">
+                        <li><a href="index.html">Login</a></li>
+                        <li><a href="index.html">Register</a></li>
+                        <li><a href="index.html">Settings</a></li>
+                        <li><a href="index.html">My Orders</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h4>Get App</h4>
+                    <div class="app-buttons">
+                        <a href="index.html" class="app-btn">
+                            <i class="fab fa-apple"></i>
+                            <div>
+                                <span class="small">Download on the</span>
+                                <span class="large">App Store</span>
+                            </div>
+                        </a>
+                        <a href="index.html" class="app-btn">
+                            <i class="fab fa-google-play"></i>
+                            <div>
+                                <span class="small">GET IT ON</span>
+                                <span class="large">Google Play</span>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Brand. All rights reserved.</p>
+                <div class="footer-bottom-links">
+                    <a href="index.html">Privacy Policy</a>
+                    <a href="index.html">Terms & Conditions</a>
+                    <a href="index.html">Cookie Policy</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>

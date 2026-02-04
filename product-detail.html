@@ -1,0 +1,446 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Details - E-Commerce Store</title>
+    
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/product-detail.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    
+    <!-- HEADER -->
+    <header class="main-header">
+        <div class="top-bar">
+            <div class="container">
+                <div class="logo-search-wrapper">
+                    <a href="index.html" class="logo">
+                        <i class="fas fa-shopping-bag"></i>
+                        <span>Brand</span>
+                    </a>
+                    <div class="search-bar">
+                        <input type="text" id="searchInput" placeholder="Search" class="search-input">
+                        <select class="category-dropdown">
+                            <option>All category</option>
+                            <option>Electronics</option>
+                            <option>Fashion</option>
+                            <option>Home & Garden</option>
+                        </select>
+                        <button class="search-btn" onclick="handleSearch()">Search</button>
+                    </div>
+                </div>
+                <div class="user-actions">
+                    <a href="#" class="action-item">
+                        <i class="far fa-user"></i>
+                        <span>Profile</span>
+                    </a>
+                    <a href="#" class="action-item">
+                        <i class="far fa-comment"></i>
+                        <span>Message</span>
+                    </a>
+                    <a href="#" class="action-item">
+                        <i class="far fa-heart"></i>
+                        <span>Orders</span>
+                    </a>
+                    <a href="#" class="action-item cart">
+                        <i class="fas fa-shopping-cart"></i>
+                        <span>My cart</span>
+                        <span class="cart-badge" id="cartCount">0</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <nav class="bottom-nav">
+            <div class="container">
+                <div class="nav-left">
+                    <button class="category-menu-btn">
+                        <i class="fas fa-bars"></i>
+                        All category
+                    </button>
+                    <a href="index.html" class="nav-link">Home</a>
+                    <a href="#" class="nav-link">Hot offers</a>
+                    <a href="#" class="nav-link">Gift boxes</a>
+                    <a href="products.html" class="nav-link">Products</a>
+                    <a href="#" class="nav-link">Menu item</a>
+                    <a href="#" class="nav-link">Help <i class="fas fa-chevron-down"></i></a>
+                </div>
+                <div class="nav-right">
+                    <select class="lang-currency">
+                        <option>English, USD</option>
+                        <option>Spanish, EUR</option>
+                    </select>
+                    <select class="ship-to">
+                        <option>Ship to 🇺🇸</option>
+                        <option>Ship to 🇬🇧</option>
+                    </select>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- ============================================ -->
+    <!-- WEEK 3: PRODUCT DETAILS PAGE -->
+    <!-- ============================================ -->
+    
+    <!-- Breadcrumb -->
+    <section class="breadcrumb">
+        <div class="container">
+            <a href="index.html">Home</a>
+            <i class="fas fa-chevron-right"></i>
+            <a href="products.html">Products</a>
+            <i class="fas fa-chevron-right"></i>
+            <span>Wireless Headphones</span>
+        </div>
+    </section>
+
+    <!-- Product Details -->
+    <section class="product-details">
+        <div class="container">
+            <div class="product-detail-grid">
+                <!-- Product Images -->
+                <div class="product-images">
+                    <div class="main-image">
+                        <img id="mainImage" src="https://images.unsplash.com/photo-1505740420928-5e560c06d30e?w=600" alt="Product">
+                        <div class="image-zoom-indicator">
+                            <i class="fas fa-search-plus"></i>
+                            Hover to zoom
+                        </div>
+                    </div>
+                    <div class="thumbnail-images">
+                        <img src="https://images.unsplash.com/photo-1505740420928-5e560c06d30e?w=150" alt="Thumbnail" class="thumbnail active" onclick="changeMainImage(this)">
+                        <img src="https://images.unsplash.com/photo-1484704849700-f032a568e944?w=150" alt="Thumbnail" class="thumbnail" onclick="changeMainImage(this)">
+                        <img src="https://images.unsplash.com/photo-1545127398-14699f92334b?w=150" alt="Thumbnail" class="thumbnail" onclick="changeMainImage(this)">
+                        <img src="https://images.unsplash.com/photo-1528148343865-51218c4a13e6?w=150" alt="Thumbnail" class="thumbnail" onclick="changeMainImage(this)">
+                    </div>
+                </div>
+
+                <!-- Product Info -->
+                <div class="product-detail-info">
+                    <span class="product-badge-detail">-20% OFF</span>
+                    <h1 class="product-detail-title">Wireless Bluetooth Headphones</h1>
+                    
+                    <div class="product-rating-detail">
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="far fa-star"></i>
+                        </div>
+                        <span class="rating-count">(4.0) 256 Reviews</span>
+                        <span class="separator">|</span>
+                        <span class="stock-status in-stock">In Stock</span>
+                    </div>
+
+                    <div class="product-price-detail">
+                        <span class="price-current-detail">$79.99</span>
+                        <span class="price-old-detail">$99.99</span>
+                        <span class="save-badge">Save $20</span>
+                    </div>
+
+                    <p class="product-description">
+                        Premium wireless headphones with active noise cancellation, 30-hour battery life, and superior sound quality. Perfect for music lovers and professionals who demand the best audio experience.
+                    </p>
+
+                    <!-- Product Options -->
+                    <div class="product-options">
+                        <!-- Color Selection -->
+                        <div class="option-group">
+                            <label>Color:</label>
+                            <div class="color-options">
+                                <button class="color-option active" style="background: #000;" data-color="Black" onclick="selectColor(this)"></button>
+                                <button class="color-option" style="background: #fff; border: 2px solid #ddd;" data-color="White" onclick="selectColor(this)"></button>
+                                <button class="color-option" style="background: #dc3545;" data-color="Red" onclick="selectColor(this)"></button>
+                                <button class="color-option" style="background: #007bff;" data-color="Blue" onclick="selectColor(this)"></button>
+                            </div>
+                            <span class="selected-value" id="selectedColor">Black</span>
+                        </div>
+
+                        <!-- Size Selection (Week 3 Dropdown) -->
+                        <div class="option-group">
+                            <label for="sizeSelect">Size:</label>
+                            <div class="custom-select-wrapper">
+                                <select id="sizeSelect" class="custom-select" onchange="selectSize(this)">
+                                    <option value="Small">Small</option>
+                                    <option value="Medium" selected>Medium</option>
+                                    <option value="Large">Large</option>
+                                    <option value="X-Large">X-Large</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <!-- Quantity Selection -->
+                        <div class="option-group">
+                            <label>Quantity:</label>
+                            <div class="quantity-selector">
+                                <button class="qty-btn" onclick="decreaseQuantity()">-</button>
+                                <input type="number" id="quantity" value="1" min="1" max="10" readonly>
+                                <button class="qty-btn" onclick="increaseQuantity()">+</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Action Buttons -->
+                    <div class="action-buttons">
+                        <button class="btn btn-primary btn-add-cart" onclick="addToCart()">
+                            <i class="fas fa-shopping-cart"></i>
+                            Add to Cart
+                        </button>
+                        <button class="btn btn-outline btn-wishlist" onclick="addToWishlist()">
+                            <i class="far fa-heart"></i>
+                            Wishlist
+                        </button>
+                    </div>
+
+                    <!-- Product Features -->
+                    <div class="product-features">
+                        <div class="feature-item">
+                            <i class="fas fa-truck"></i>
+                            <div>
+                                <strong>Free Delivery</strong>
+                                <span>For orders above $50</span>
+                            </div>
+                        </div>
+                        <div class="feature-item">
+                            <i class="fas fa-shield-alt"></i>
+                            <div>
+                                <strong>Warranty</strong>
+                                <span>2 years full warranty</span>
+                            </div>
+                        </div>
+                        <div class="feature-item">
+                            <i class="fas fa-undo"></i>
+                            <div>
+                                <strong>Easy Returns</strong>
+                                <span>30-day return policy</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Product Tabs -->
+    <section class="product-tabs-section">
+        <div class="container">
+            <div class="tabs-navigation">
+                <button class="tab-btn active" onclick="switchTab('description')">Description</button>
+                <button class="tab-btn" onclick="switchTab('specifications')">Specifications</button>
+                <button class="tab-btn" onclick="switchTab('reviews')">Reviews (256)</button>
+            </div>
+
+            <div class="tabs-content">
+                <div id="description" class="tab-content active">
+                    <h3>Product Description</h3>
+                    <p>Experience superior sound quality with our premium wireless headphones. Featuring advanced active noise cancellation technology, these headphones block out unwanted ambient noise, allowing you to focus on your music, calls, or podcasts.</p>
+                    <p>With up to 30 hours of battery life on a single charge, you can enjoy uninterrupted listening throughout your day. The comfortable over-ear design with memory foam cushions ensures all-day comfort, even during extended use.</p>
+                    <ul>
+                        <li>Active Noise Cancellation (ANC)</li>
+                        <li>30-hour battery life</li>
+                        <li>Premium sound drivers</li>
+                        <li>Comfortable memory foam cushions</li>
+                        <li>Foldable design with carrying case</li>
+                    </ul>
+                </div>
+
+                <div id="specifications" class="tab-content">
+                    <h3>Specifications</h3>
+                    <table class="specs-table">
+                        <tr>
+                            <td>Brand</td>
+                            <td>Premium Audio</td>
+                        </tr>
+                        <tr>
+                            <td>Model</td>
+                            <td>WH-Pro X</td>
+                        </tr>
+                        <tr>
+                            <td>Battery Life</td>
+                            <td>30 hours</td>
+                        </tr>
+                        <tr>
+                            <td>Connectivity</td>
+                            <td>Bluetooth 5.0</td>
+                        </tr>
+                        <tr>
+                            <td>Weight</td>
+                            <td>250g</td>
+                        </tr>
+                        <tr>
+                            <td>Warranty</td>
+                            <td>2 Years</td>
+                        </tr>
+                    </table>
+                </div>
+
+                <div id="reviews" class="tab-content">
+                    <h3>Customer Reviews</h3>
+                    <div class="review-item">
+                        <div class="review-header">
+                            <div class="reviewer-info">
+                                <strong>John Doe</strong>
+                                <div class="review-stars">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                </div>
+                            </div>
+                            <span class="review-date">2 days ago</span>
+                        </div>
+                        <p>Excellent sound quality! The noise cancellation works perfectly. Highly recommended.</p>
+                    </div>
+
+                    <div class="review-item">
+                        <div class="review-header">
+                            <div class="reviewer-info">
+                                <strong>Sarah Johnson</strong>
+                                <div class="review-stars">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="far fa-star"></i>
+                                </div>
+                            </div>
+                            <span class="review-date">1 week ago</span>
+                        </div>
+                        <p>Very comfortable for long listening sessions. Battery life is as advertised.</p>
+                    </div>
+
+                    <button class="btn btn-secondary">Load More Reviews</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Related Products -->
+    <section class="related-products">
+        <div class="container">
+            <h2 class="section-title">Related Products</h2>
+            <div class="products-grid-small">
+                <div class="product-card-small">
+                    <img src="https://images.unsplash.com/photo-1598327105666-5b89351aff97?w=200" alt="Product">
+                    <h4>Wireless Earbuds</h4>
+                    <span class="price">$149.99</span>
+                </div>
+                <div class="product-card-small">
+                    <img src="https://images.unsplash.com/photo-1484704849700-f032a568e944?w=200" alt="Product">
+                    <h4>Mechanical Keyboard</h4>
+                    <span class="price">$81.99</span>
+                </div>
+                <div class="product-card-small">
+                    <img src="https://images.unsplash.com/photo-1527814050087-3793815479db?w=200" alt="Product">
+                    <h4>Gaming Mouse</h4>
+                    <span class="price">$59.99</span>
+                </div>
+                <div class="product-card-small">
+                    <img src="https://images.unsplash.com/photo-1546868871-7041f2a55e12?w=200" alt="Product">
+                    <h4>Smart Watch SE</h4>
+                    <span class="price">$139.99</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="main-footer">
+        <div class="container">
+            <div class="footer-top">
+                <div class="footer-column">
+                    <div class="footer-logo">
+                        <i class="fas fa-shopping-bag"></i>
+                        <span>Brand</span>
+                    </div>
+                    <p class="footer-description">
+                        Best information about the company goes here but now lorem ipsum is being used.
+                    </p>
+                    <div class="social-links">
+                        <a href="#" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="social-icon"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                <div class="footer-column">
+                    <h4>About</h4>
+                    <ul class="footer-links">
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Find Store</a></li>
+                        <li><a href="#">Categories</a></li>
+                        <li><a href="#">Blogs</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h4>Partnership</h4>
+                    <ul class="footer-links">
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Find Store</a></li>
+                        <li><a href="#">Categories</a></li>
+                        <li><a href="#">Blogs</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h4>Information</h4>
+                    <ul class="footer-links">
+                        <li><a href="#">Help Center</a></li>
+                        <li><a href="#">Money Refund</a></li>
+                        <li><a href="#">Shipping</a></li>
+                        <li><a href="#">Contact Us</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h4>For Users</h4>
+                    <ul class="footer-links">
+                        <li><a href="#">Login</a></li>
+                        <li><a href="#">Register</a></li>
+                        <li><a href="#">Settings</a></li>
+                        <li><a href="#">My Orders</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h4>Get App</h4>
+                    <div class="app-buttons">
+                        <a href="#" class="app-btn">
+                            <i class="fab fa-apple"></i>
+                            <div>
+                                <span class="small">Download on the</span>
+                                <span class="large">App Store</span>
+                            </div>
+                        </a>
+                        <a href="#" class="app-btn">
+                            <i class="fab fa-google-play"></i>
+                            <div>
+                                <span class="small">GET IT ON</span>
+                                <span class="large">Google Play</span>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Brand. All rights reserved.</p>
+                <div class="footer-bottom-links">
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms & Conditions</a>
+                    <a href="#">Cookie Policy</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Toast Notification -->
+    <div id="toast" class="toast">
+        <i class="fas fa-check-circle"></i>
+        <span id="toastMessage">Product added to cart!</span>
+    </div>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
